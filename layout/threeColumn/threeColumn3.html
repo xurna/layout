@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<title>三列比例自适应(中间可固定)布局 | Xurna Yang</title>
+	<style type="text/css">
+		body{
+			height: 100%;
+			margin: 0;
+		}
+		html{
+			/*兼容firefox的div高度100%*/
+			height: 100%;
+		}
+		.wrapper{
+			height: 100%;
+			width: 100%;
+			display: -webkit-flex; /* Safari */
+			display: flex;
+		}
+		.left{
+			height: 100%;
+			flex:5;
+			/*width: 25%;*/
+ 			 background-color:green 
+
+		}
+		.main{
+			height: 100%;
+			flex:6;
+			/*width: 200px;*/ /*可以设置为固定宽度*/
+			/*width: 30%;*/
+			background-color: yellow;
+		}
+		.right{
+			height: 100%;
+			flex:9;
+			/*width: 45%;*/
+			background-color: blue;
+		}
+	</style>
+	
+</head>
+<!-- 实现三列比例自适应：父元素设置display: flex;属性，子元素三列都设置flex 对应的比例-->
+<body>
+	<div class="wrapper">
+		<div class="left">left</div>
+	   	<div class="main"> main</div>
+	    <div class="right">right</div>
+	</div>
+	
+</body>
+</html>

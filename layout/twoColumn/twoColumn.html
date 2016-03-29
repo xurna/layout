@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<title>两列布局 | Xurna Yang</title>
+	<style type="text/css">
+		body{
+			height: 100%;
+			margin: 0;
+		}
+		html{
+			/*兼容firefox的div高度100%*/
+			height: 100%;
+		}
+		.left{
+			height: 100%;
+			float: left;
+			width: 100px;
+			/*解决IE6的3px-Bug*/
+  			 /*IE6下当浮动元素与非浮动元素相邻时，3px的Bug就会出现，它会偏移3像素。*/
+ 			_margin-right: -3px;
+ 			 background-color: yellow
+
+		}
+		.main{
+			height: 100%;
+			/*width: 100%;*/  /* 不可以添加*/
+			overflow: auto;
+			background-color: green;
+		}
+	</style>
+	
+</head>
+<!-- 实现两列布局，左边固定宽度，右边自适应：左列float，右列不用设置width -->
+<body>
+	<div class="left">left</div>
+  	<div class="main"> main</div>
+</body>
+</html>
