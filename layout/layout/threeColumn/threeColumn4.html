@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<title>三列布局|左右两列固定宽度，中间自适应，但最后渲染|Xurna Yang</title>
+	<style type="text/css">
+		body{
+			height: 100%;
+			margin: 0;
+		}
+		html{
+			/*兼容firefox的div高度100%*/
+			height: 100%;
+		}
+		.wrapper{
+			height: 100%;
+			width: 100%;
+		}
+		.left{
+			width: 100px;
+			height: 100%;
+ 			background-color:green;
+
+ 			float: left; 
+
+		}
+		.main{
+			height: 100%;
+			/*width: 100%;*//*不要设置宽度*/
+			background-color: yellow;
+
+			margin: 0 100px;
+		}
+		.right{
+			width: 100px;
+			height: 100%;
+			background-color: blue;
+
+			float: right;
+		}
+	</style>
+	
+</head>
+<!-- 实现左右宽度固定，中间自适应：使用浮动float，注意中间列放最后面-->
+<body>
+	<div class="wrapper">
+		<div class="left">left</div>
+	    <div class="right">right</div>
+	    <div class="main"> main</div>
+	</div>
+	
+</body>
+</html>

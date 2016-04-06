@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<title>三列布局|左右两列固定宽度，中间自适应，但最先渲染|Xurna Yang</title>
+	<style type="text/css">
+		body{
+			height: 100%;
+			margin: 0;
+		}
+		html{
+			/*兼容firefox的div高度100%*/
+			height: 100%;
+		}
+		.wrapper{
+			height: 100%;
+			width: 100%;
+			position: relative;
+		}
+		.left{
+			width: 100px;
+			height: 100%;
+ 			background-color:green;
+
+ 			float: left; 
+
+		}
+		.main{
+			height: 100%;
+			background-color: yellow;
+
+			position: absolute;
+			right: 100px;
+			left: 100px; 
+			word-break:break-all;
+			min-width: 100px;  /*设置了最小宽度*/
+		}
+		.right{
+			width: 100px;
+			height: 100%;
+			background-color: blue;
+			
+			float: right;
+			margin-left: 100px; /*当屏幕太小时，避免被main遮住部分内容*/
+		}
+		.box{
+			width: 30px;
+			height: 30px;
+			float: left;
+			margin: 5px;
+			background: black;
+
+		}
+	</style>
+	
+</head>
+<!-- 实现左右两列固定宽度，中间自适应，但最先渲染：左右使用浮动float，中间列用absolute，放前面-->
+<body>
+	<div class="wrapper">
+		<div class="main"> 
+			main mainmainmainmainmainmainmainvmainmainmainmainmainmainmain
+			<div></div>
+			<div class="box">1</div>
+			<div class="box">2</div>
+			<div class="box">3</div>
+		</div>
+		<div class="left">left</div>
+	    <div class="right">right</div>
+	    
+	</div>
+	
+</body>
+</html>
