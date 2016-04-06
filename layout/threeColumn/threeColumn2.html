@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<title>三列比例自适应布局 | Xurna Yang</title>
+	<style type="text/css">
+		body{
+			height: 100%;
+			margin: 0;
+		}
+		html{
+			/*兼容firefox的div高度100%*/
+			height: 100%;
+		}
+		.left{
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 25%;
+ 			 background-color:green 
+
+		}
+		.main{
+			height: 100%;
+			position: absolute;
+			left: 25%;
+			top: 0;
+			width: 30%;
+			background-color: yellow;
+		}
+		.right{
+			height: 100%;
+			position: absolute;
+			left: 55%;
+			top: 0;
+			width: 45%;
+			background-color: blue;
+		}
+	</style>
+	
+</head>
+<!-- 实现三列比例自适应：三列都设置绝对定位 -->
+<body>
+	<div class="left">left</div>
+   	<div class="main"> main</div>
+    <div class="right">right</div>
+</body>
+</html>

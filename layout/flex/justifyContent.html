@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>justifyContent</title>
+	<style>
+		.container{
+			width: 1000px;
+			height: 220px;
+			display: flex;
+			background: green;
+			margin: 20px;
+		}
+		.flex-item{
+			width: 300px;
+			height: 200px;
+			background: blue;
+			margin: 10px;
+		}
+		.container1{
+			flex-direction:row;
+			flex-wrap:nowrap;
+			justify-content: center;
+		}
+		.container2{
+			flex-direction:row-reverse;
+			/*flex-wrap:wrap;*/
+			justify-content: center;
+		}
+		.container2 .flex-item{
+			width: 400px;
+		}
+		.container3{
+			flex-flow:row nowrap;
+			justify-content: space-between;
+		}
+		.container4{
+			flex-direction:row;
+			flex-wrap:nowrap;
+			justify-content: space-around;
+		}
+	</style>
+</head>
+<body>
+	<div class="container container1">
+		<div class="flex-item">11</div>
+		<div class="flex-item">12</div>
+		<div class="flex-item">13</div>
+	</div>
+	<div class="container container2">
+		<div class="flex-item">11</div>
+		<div class="flex-item">12</div>
+		<div class="flex-item">13</div>
+	</div>
+	<div class="container container3">
+		<div class="flex-item">11</div>
+		<div class="flex-item">12</div>
+		<div class="flex-item">13</div>
+	</div>
+	<div class="container container4">
+		<div class="flex-item">11</div>
+		<div class="flex-item">12</div>
+		<div class="flex-item">13</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<title>文字div居中元素 | Xurna Yang</title>
+	<style type="text/css">
+		body{
+			height: 100%;
+			margin: 0;
+		}
+		html{
+			/*兼容firefox的div高度100%*/
+			height: 100%;
+		}
+		.wrapper{
+			height: 200px;
+			width: 100%;
+			display:table;
+			background-color: green;
+		}
+		.wrapper p{
+			color: #fff;
+			margin-left: 10px;
+			width: 50px;
+			vertical-align: middle;
+			display:table-cell;
+			display: inline-block;
+		}
+		.main{
+			height:100px;
+			width: 100px;
+			background-color: yellow;
+			vertical-align: middle;
+			display:table-cell;
+			display: inline-block;
+		}
+		.right{
+			height:100px;
+			width: 100px;
+			background-color: blue;
+			margin-left: 10px;
+			vertical-align: middle;
+			display:table-cell;
+			display: inline-block;
+		}
+
+	</style>
+	
+</head>
+<!-- 在有文字的前提下居中：使用display:table; -->
+<body>
+	<div class="wrapper">
+	   	<div class="main"> main</div>
+	   	<div class="right">right</div>
+	   	<p>hello world hello world hello world hello world </p>
+	</div>
+	
+</body>
+</html>

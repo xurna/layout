@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<title>上下左右居中元素 | Xurna Yang</title>
+	<style type="text/css">
+		body{
+			height: 100%;
+			margin: 0;
+		}
+		html{
+			/*兼容firefox的div高度100%*/
+			height: 100%;
+		}
+		.wrapper{
+			height: 50%;
+			width: 50%;
+			position: relative;
+			background-color: green;
+			display: flex;
+			align-items:center;
+			justify-content:center;
+			margin: 20px;
+		}
+		
+		.main{
+			height:50%;
+			width: 50%;
+			background-color: yellow;		
+		}
+		.main1,.main2{
+			height:50%;
+			width: 50%;
+			margin: 10px;
+			flex:1;
+			background-color: yellow;	
+
+		}
+
+	</style>
+	
+</head>
+<!-- 上下左右居中元素：用flex -->
+<body>
+	<div class="wrapper">
+	   	<div class="main"> main</div>
+	</div>
+
+	<div class="wrapper">
+	   	<div class="main1"> main</div>
+	   	<div class="main2"> main</div>
+	</div>
+	
+</body>
+</html>
